@@ -50,6 +50,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2rem;
 	text-transform: uppercase;
+	overflow: hidden;
 }
 
 img {
@@ -71,7 +72,7 @@ header {
 	background-size: cover;
 	height: 100vh;
 	padding-top: 5%;
-	
+	overflow: hidden;
 }
 
 /*   N A V I G A T I O N - (HEADER PAGE)  */
