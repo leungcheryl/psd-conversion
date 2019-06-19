@@ -1,0 +1,1187 @@
+/* SETUP
+
+Fonts
+Montserrat (Google Fonts)
+Crimson Text(Google Fonts)
+
+Icons
+Font Awesome
+
+Colours
+Yellow #eeb013
+Black #141414
+Light Grey #e4e4e4
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Crimson Text', serif;
+
+*/
+
+
+/*   S E T U P - C S S   */
+
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* {-webkit-font-smoothing: antialiased;}
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  font-size: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+img {
+	width: auto;
+	height: 100%;
+}
+
+.wrapper {
+	max-width: 1140px;
+	margin: 0 auto;
+	width: 70%;
+}
+
+/*   H E A D E R  P A G E   */
+
+
+header {
+	background-image: url(assets/main-image-1.jpeg);
+	background-size: cover;
+	height: 100vh;
+	padding-top: 5%;
+	
+}
+
+/*   N A V I G A T I O N - (HEADER PAGE)  */
+
+
+.header-nav {
+	display: flex;
+}
+
+nav {
+	width: 100%;
+}
+
+nav ul {
+	display: flex;
+	margin-top: 1.5em;
+}
+
+nav ul li {
+	flex-wrap: nowrap;
+	
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	font-size: 1rem;
+	transition: 0.4s all ease;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+	flex: 2 0 400px;
+	margin-left: 120px;
+}
+
+.nav-icons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex: 0 1 50px;
+	margin-left: 40px;
+}
+
+.nav-links li {
+	list-style-type: none;
+	text-align: right;
+}
+
+.nav-icons li {
+	list-style-type: none;
+	padding-left: 25px;
+}
+
+.header-nav ul li ul {
+	display: none;
+	position: absolute;
+}
+
+.header-nav ul li  {
+	position: relative;
+}
+
+.header-nav ul li a {
+	padding-bottom: 25px;
+}
+
+.header-nav ul li a:hover {
+	border-bottom: solid 2px #eeb013;
+	letter-spacing: 3px;
+}
+
+
+
+/*   N A V I G A T I O N  - DROPDOWN   */
+
+
+.nav-links li:hover ul.sub-menu {
+	display: block;
+	padding-top: 10%;
+	z-index: 2;
+}
+
+ul.sub-menu li {
+	color: white;
+	text-align: left;
+	padding: 3%;
+}
+
+ul.sub-menu li a {
+	font-weight: 700;
+	padding: 3%;
+}
+
+ul.sub-menu li a:hover {
+	letter-spacing: 3px;
+	border-radius: 1px;
+}
+
+
+/*   M A I N  L O G O - (HEADER PAGE)   */
+
+
+.header-container {
+	position: relative;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-text {
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	width: 40%;
+	color: white;
+}
+
+.header-text h4 {
+	font-size: 1.5rem;
+	letter-spacing: 1.5px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0;
+}
+
+.header-text h1 {
+	font-size: 5rem;
+	letter-spacing: 0.5px;
+	border: 2.5px solid white;
+	font-weight: 700;
+	padding: 2% 10%;
+	margin-top: 4%;
+}
+
+.header-text a {
+	text-decoration: none;
+	color: white;
+	border: 1.5px solid white;
+	padding: 3% 10%;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 20%;
+}
+
+.header-text a:hover {
+	color: #eeb013;
+	border: 1.5px solid #eeb013;
+	transition: 0.5s all ease;
+	letter-spacing: 1.5px;
+}
+
+
+/*   S E C T I O N  O N E  - (3 IMAGES) */
+
+.grid-1 {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1%;
+}
+
+.grid-1 .section-1-pic {
+	position: relative;
+	width: calc(33.3% - 2%);
+	margin: 1%;
+}
+
+.grid-1 .section-1-pic img {
+	width: 100%;
+	display: block;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.overlay.trend-acc a {
+	text-decoration: none;
+	color: white;
+	border: 3px solid white;
+	padding: 2% 10%;
+	font-weight: 700;
+	font-size: 2.5rem;
+	position: absolute;
+	transition: 0.5s all ease
+}
+
+.overlay.sale-70 a {
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	position: absolute;
+	text-align: center;
+	font-size: 2rem;
+	transition: 0.5s all ease;
+}
+
+.overlay.sale-70 a .off-70 {
+	font-size: 5rem;
+}
+
+.overlay.trend-acc a:hover, .overlay.sale-70 a:hover {
+	color: #eeb013;
+	border-color: #eeb013;
+	letter-spacing: 0.5px;
+}
+
+
+
+/*   S E C T I O N  O N E / 6 / 7 / 8   - (NEW ARRIVALS/FASHION NEWS/TESTIMONIAL/OUR BRANDS BUTTON) */
+
+.new-arrival, .fashion-news, .testimonial, .our-brands {
+	text-align: center;
+	margin: 5% 0;
+}
+
+.new-arrival h3, .fashion-news h3, .testimonial h3, .our-brands h3 {
+	color: #141414;
+	border: 1px solid #e4e4e4;
+	font-size: 1.5rem;
+	text-align: center;
+	display: inline-block;
+	padding: 1.5% 6%;
+}
+
+
+/*   S E C T I O N  O N E  - (NEW ARRIVALS GALLERY NAV) */
+
+ul.new-arrival-nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 50px;
+}	
+
+.nan-container {
+	display: flex;
+	flex: 0 1 400px;
+	justify-content: space-between;
+}
+
+.nan-container li {
+	list-style: none;
+}
+
+
+.nan-container a {
+	color: #141414;
+}
+
+.nan-container a:hover::after {
+	content: '\25C6';
+	font-size: 1.5rem;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	color: #eeb013;
+}
+
+.nan-container a:hover {
+	color: #eeb013;
+	letter-spacing: 2px;
+}
+
+
+
+/*   S E C T I O N  O N E  - (NEW ARRIVALS GALLERY) */
+
+.new-arrival-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 10%;
+}
+
+.new-arrival-item {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 1%;
+	width: calc(25% - 3%);
+	height: 100%;
+	min-width: 200px;
+	flex: 1 0 22%;
+}
+
+.new-arrival-item img {
+	display: block;
+	width: 100%;
+}
+
+.item-info {
+	padding-top: 5%;
+}
+
+.item-info a {
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	font-size: 1.1rem;
+	transition: 0.4s all ease;
+	color: #141414;
+}
+
+.item-info a:hover {
+	color: #eeb013;
+	letter-spacing: 2px;
+}
+
+.item-info p, .section-two-text p, .section-three-text p, .feature p, .section-nine-text p {
+	font-family: 'Crimson Text', serif;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+.item-info span {
+	color: gray;
+	text-decoration: line-through;
+}
+
+.new-sale-overlay {
+	position: absolute;
+	top: 1px;
+	left: 10px;
+}
+
+.new-sale-overlay p {
+	font-weight: 600;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	padding: 15% 10%;
+	width: 40px;
+	border: 2px solid black;
+}
+
+.new-arrival-img {
+	display: flex;
+	position: relative;
+}
+
+.add-cart-overlay {
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 20%;
+	background-color: rgba(238,176,19,0.9);
+}
+
+.add-cart-overlay a {
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	letter-spacing: 4px;
+	padding-top: 10%;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	transition: 0.5s all ease;
+}
+
+.add-cart-overlay span {
+	transition: 0.5s all ease;
+}
+
+.add-cart-overlay a:hover {
+	letter-spacing: 4.5px;
+}
+
+.add-cart-overlay a:hover span {
+	color: white;
+}
+
+
+.new-arrival-img:hover .add-cart-overlay {
+	display: block;
+	opacity: 1;
+}
+
+
+/*  S E C T I O N  T W O / 3 / 9 - (DOGTOOTH BLANKET)  */
+
+
+.section-two img, .section-three img, .section-nine img {
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.section-two, .section-three, .section-nine {
+	position: relative;
+}
+
+.section-two-container, .section-three-container, .section-nine-container {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.section-two-container {
+	margin-left: 52vw;
+}
+
+.section-two-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	margin: auto;
+	margin-left: 0;
+	flex: 0 1 70%;
+	/*width: 70%;*/
+}
+
+.section-two-text h1:nth-of-type(1), .section-three-text h1, .section-nine-text h1 {
+	margin-top: 0;
+	letter-spacing: 1px;
+ }
+
+.section-two-text h1:nth-of-type(2) {
+	color: #eeb013;
+}
+
+.section-two a, .section-three a, .section-nine a {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	color: black;
+	padding: 3.5% 7%;
+	background-color: #eeb013;
+	transition: 0.5s all ease;
+	margin-top: 3%;
+}
+
+.section-two a:hover, .section-three a:hover {
+	font-weight: 700;
+	color: white;
+	letter-spacing: 3px;
+}
+
+/*  S E C T I O N  T H R E E - (Asos Cropped Sweater)  */
+
+
+.section-three-text, .section-nine-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	margin: auto;
+	margin-right: 0;
+	width: 70%;
+}
+
+.section-three a {
+	margin-top: 6%;
+}
+
+.section-three-text h1 {
+	margin-bottom: 2%;
+}
+
+
+/*  S E C T I O N  F O U R - (Icons & Features)  */
+
+.feature-container {
+	display: flex;
+	padding: 4% 0;
+	width: 100%;
+}
+
+.feature h5, .feature p {
+	text-align: center;
+}
+
+.feature i {
+	font-size: 2.5rem;
+	border-radius: 100%;
+	border: 1.5px black solid;
+	padding: 20px;
+	margin: auto;
+	margin-bottom: 7%;
+}
+
+.feature {
+	text-align: center;
+	flex-direction: column;
+	display: flex;
+	margin: 2%;
+}
+
+.feature.first {
+	margin-left: 0;
+}
+
+.feature.last {
+	margin-right: 0;
+}
+
+.feature h5 {
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}
+
+.feature p {
+	text-transform: lowercase;
+	color: gray;
+}
+
+.feature p:first-letter {
+	text-transform: capitalize;
+}
+
+
+/*  S E C T I O N  F I V E - (3 Images - No Spaces)  */
+
+
+.grid-2 {
+	display: flex;
+	width: 100%;
+}
+
+.grid-2 img {
+	width: 33.33%;
+}
+
+/*  S E C T I O N  S I X - (Fashion News)  */
+
+.fashion-news-container {
+	display: flex;
+}
+
+.fashion-news-grid img {
+	width: 100%;
+	height: auto;
+}
+.fashion-news-grid {
+	width: 100%;
+	margin: 1%;
+	position: relative;
+}
+
+
+		/* S6 - Text Styles*/
+
+.fashion-news-grid h3 {
+	text-transform: none;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.fashion-news-grid p {
+	text-transform: none;
+	margin-bottom: 0;
+	clear: both;
+}
+
+.fashion-news-grid p:nth-of-type(1) {
+	font-weight: 600;
+}
+
+p.fashion-info {
+	padding: 5% 0;
+	margin-bottom: 20%;
+}
+
+.fashion-news-grid p span {
+	color: #eeb013;
+}
+
+
+		/* S6 - Interaction/Date Line */
+
+.FN-Interactions-container {
+	width: 100%;
+	position: relative;
+	height: 50px;
+	margin-top: 5px;
+}
+
+.FN-Interactions {
+	width: 80%;
+	float: left;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	padding: 3% 0;
+	color: gray;
+	position: absolute;
+	bottom: 0;
+}
+
+.FN-date {
+	width: 20%;
+	min-width: 15%;
+	float: left;
+	background-color: #eeb013;
+	padding: 8px;
+	position: absolute;
+	bottom: 0;
+	right:0;
+	height: 100%;
+
+}
+
+.FN-date p {
+	margin: 0;
+	color: white;
+	display: block;
+	font-family: 'Crimson Text', serif;
+	font-size: 17px;
+	text-align: center;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.FN-Interactions a {
+	text-decoration: none;
+	text-transform: capitalize;
+	font-weight: bold;
+	color: gray;
+	transition: 0.5s all ease;
+}
+
+.FN-Interactions a::before {
+	content: '';
+	display: inline-block;
+	width: 5px;
+}
+
+.FN-Interactions a::after {
+	content: '';
+	display: inline-block;
+	width: 10px;
+}
+
+.FN-Interactions a:hover {
+	color: #eeb013;
+	letter-spacing: 0.5px;
+}
+
+
+		/* S6 - Read More Button */
+
+.read-more-btn {
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+}
+
+.read-more-btn a {
+	color: #141414;
+	border: 2px solid #e4e4e4;
+	font-size: 1.1rem;
+	text-align: center;
+	display: inline-block;
+	padding: 10% 15%;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 2px;
+	transition: 0.5s all ease;
+}
+
+.read-more-btn a:hover{
+	color: #eeb013;
+	letter-spacing: 2.5px;
+	border-color: grey;
+}
+
+
+		/* 2nd Pic - Arrows Overlay */
+
+.FN-arrows-overlay, .FN-play-overlay {
+	position: relative;
+	width: 100%;
+}
+
+.FN-arrows-overlay a.left-arrow, .FN-arrows-overlay a.right-arrow {
+	position: absolute;
+	top: 45%;
+	padding: 2% 4%;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 1.5rem;
+	border-radius: 2.5px;
+	color: black;
+}
+
+.FN-arrows-overlay a.left-arrow {
+	left: 0;
+	margin-left: 3%;
+}
+
+.FN-arrows-overlay a.right-arrow {
+	right: 0;
+	margin-right: 3%;
+}
+
+.FN-arrows-overlay a {
+	font-weight: bolder;
+	text-decoration: none;
+	transition: 0.6s all ease;
+}
+
+.FN-arrows-overlay a:hover {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+		/* 3rd Pic - Play Button Overlay */
+
+.FN-play-overlay a {
+	position: absolute;
+	font-size: 15rem;
+	color: rgba(255, 255, 255, 0.3);
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 20%;
+	transition: 0.6s all ease;
+}
+
+.FN-play-overlay a:hover {
+	color: rgba(242, 38, 19, 0.9);
+}
+
+
+
+/*  S E C T I O N  S E V E N - (Testimonial)  */
+
+.testimonial-text {
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+}
+
+.testimonial-text p {
+	text-transform: none;
+	font-family: 'Crimson Text', serif;
+	font-size: 1.5rem;
+	font-style: italic;
+	line-height: 2;
+}
+
+.testimonial-text h4 {
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 1.1rem;
+	padding-top: 2%;
+	margin-bottom: 1%;
+} 
+
+.testimonial-text h5 {
+	font-family: 'Crimson Text', serif;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-style: italic;
+	color: grey;
+	margin-top: 0;
+	margin-bottom: 3%;
+}
+
+
+		/*  S7 - Circle Hover Buttons */
+
+.circle-buttons {
+	positon: relative;
+}
+
+.circle-buttons .circle {
+	padding: 3px;
+	color: lightgrey;
+	transition: 0.6s all;
+}
+
+.circle-buttons a.circle.one {
+	color: #eeb013;
+}
+
+.circle-buttons a:hover {
+	color: #eeb013;
+}
+
+
+
+/*  S E C T I O N  E I G H T  - (Our Brands)  */
+
+.brands-container {
+	display: flex;
+	width: 95%;
+	margin: 0 auto;
+	margin-bottom: 10%;
+	justify-content: space-between;
+}
+
+.brand-logo img {
+	width: 100%;
+	display: block;
+}
+
+.brand-logo {
+	display: flex;
+	margin: 0 3%;
+}
+
+
+
+/*  S E C T I O N  N I N E - (Create New Lookbook)  */
+
+
+.section-nine-text {
+	display: inline-block;
+	text-align: center;
+}
+
+.section-nine-text h1 {
+	font-size: 2.1rem;
+	letter-spacing: 2px;
+}
+
+.section-nine-text p {
+	text-transform: none;
+	color: gray;
+	line-height: 1.5;
+	text-align: center;
+	margin: 4% 0 15% 0;
+	font-size: 1.2rem;
+}
+
+.section-nine-container {
+	width: 48%;
+}
+
+.section-nine-text a {
+	background-color: black;
+	color: white;
+	font-weight: 700;
+	padding: 4% 10%;
+	transition: 0.5s all ease;
+}
+
+.section-nine-text a:hover {
+	font-weight: 700;
+	color: black;
+	letter-spacing: 3px;
+	background-color: #eeb013;
+}	
+
+
+
+/*  F O O T E R  */
+
+footer {
+	background-color: black;
+	overflow: auto;
+}
+
+footer h5 {
+	color: white;
+	margin-top: 0;
+}
+
+
+.links h5::after, .twitter h5::after, .instagram h5::after{
+	content: '';
+	border: 1px solid #eeb013;
+	width: 15px;
+	display: block;
+	margin-top: 10px;
+}
+
+footer p, footer a {
+	color: grey;
+	text-transform: none;
+	letter-spacing: 1px;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.8;
+	text-decoration: none;
+}
+
+
+.footer-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 5% 0;
+}
+
+.footer-container img {
+	width: 100%;
+	height: auto;
+}
+
+span.divider {
+	display: inline-block;
+	width: 0;
+	height: 250px;
+	border-left: 1px solid rgb(36,36,36);
+}
+
+.footer-section {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 25%;
+	padding: 0 3% 0 2%;
+}
+
+
+		/* Footer - Agency Section */
+
+.agency img {
+	width: 50%;
+	margin-top: 5%;
+}
+
+.footer-section.agency h5 {
+	color: #eeb013;
+}
+
+.footer-section.agency {
+	padding-left: 0;
+	flex: 1 0 25%;
+}
+
+
+		/* Footer - Links Section */
+
+.footer-section.links {
+	flex: 0 0 17%;
+}
+
+.footer-section.links a {
+	text-transform: uppercase;
+	line-height: 4;
+	font-size: 0.8rem;
+	transition: 0.5s all ease;
+}
+
+.footer-section.links a:hover {
+	color: #eeb013;
+	letter-spacing: 1.5px;
+}
+.links-container {
+	display: flex;
+	flex-direction: column;
+}
+
+
+		/* Footer - Twitter Section */
+
+.twitter p {
+	line-height: 1.2;
+}
+
+
+.twitter i {
+	color: rgb(36,36,36);
+}
+
+.twitter a {
+	transition: 0.5s all ease;
+}
+
+.twitter a.twitter-link {
+	font-weight: 200;
+	letter-spacing: 1.5px;
+	transition: 0.5s all ease;
+}
+
+a.twitter-link:hover i {
+	color: #00aced;
+	transition: 0.5s all ease;
+}
+
+.twitter a:hover, a.twitter-link:hover {
+	color: white;
+	letter-spacing: 2px;
+}
+
+.twitter .tweet {
+	margin-bottom: 7%;
+}
+
+
+		/* Footer - Instagram Section */
+
+.insta-grid {
+	display: flex;
+	flex-wrap: wrap;
+	max-height: 300px;
+	max-width: auto;
+	margin-top: 5%;
+}
+
+.insta-pic img {
+	display: block;
+	width: 100%;
+}
+
+.insta-pic {
+	width: calc(100% / 3);
+	margin: 2%;
+	flex: 1 0 45px;
+	position: relative;
+}
+
+.insta-overlay {
+	background: linear-gradient(to bottom right, rgba(238, 176, 19,0.5), rgba(238, 176, 19,0.5));
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+.insta-overlay a {
+	transition: 0.5s all ease;
+}
+
+.insta-overlay i {
+	position: absolute;
+	display: block;
+	text-align: center;
+	color: white;
+	left: 0;
+	right: 0;
+	top: 40%;
+	font-size: 1.2rem;
+	transition: 0.3s all ease;
+}
+
+.insta-pic:hover .insta-overlay {
+	display: block;
+}
+
+.insta-pic a:hover i {
+	font-size: 1.5rem;
+}
+
+
+		/*  Bottom Footer  */
+
+.bottom-footer p, .bottom-footer i {
+	color: grey;
+	margin: 0;
+}
+
+.bottom-footer {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3%;
+}
+
+.social-icons {
+	width: 25%;
+	justify-content: space-between;
+	display: flex;
+}
+
+.social-icons i {
+	transition: 0.5s all ease;
+	font-size: 1.2rem;
+}
+
+i.fa-facebook-f:hover {
+	color: #3b5998;
+}
+
+i.fa-twitter:hover {
+	color: #00aced;
+}
+
+i.fa-dribbble:hover {
+	color: #ea4c89;
+}
+
+i.fa-behance:hover {
+	color: #053eff;
+}
+
+i.fa-google-plus-g:hover {
+	color: #F4B400;
+}
+
+i.fa-pinterest-p:hover {
+	color: #c8232c;
+}
